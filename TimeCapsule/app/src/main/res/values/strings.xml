@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TimeCapsule</string>
+    <string name="appName">胶囊工坊</string>
+    <string name="diary_content_hint">请输入内容</string>
+    <string name="diary_title_hint">请输入标题</string>
+    <string name="choose_a_picture">Choose a picture</string>
+    <string name="canvas">canvas</string>
+    <string name="choose">choose</string>
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/background">
+
+    <ImageButton
+        android:id="@+id/diary_canvas_save"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/diary_canvas_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/diary_canvas_image"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/diary_canvas_save"
+        app:layout_constraintStart_toStartOf="@+id/diary_canvas_back"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/black"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#000000" />
+
+        <Button
+            android:id="@+id/purple"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#6a5acd" />
+
+        <Button
+            android:id="@+id/blue"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#03A9F4" />
+
+        <Button
+            android:id="@+id/green"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#66AF4C" />
+
+
+        <Button
+            android:id="@+id/yellow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#FFEB3B" />
+
+        <Button
+            android:id="@+id/orange"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#FF9800" />
+
+
+        <Button
+            android:id="@+id/red"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#F44336" />
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/diary_canvas_backward"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diary_canvas_image"
+        android:background="@drawable/backward" />
+
+    <ImageButton
+        android:id="@+id/diary_canvas_forward"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diary_canvas_image"
+        android:background="@drawable/forward" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
